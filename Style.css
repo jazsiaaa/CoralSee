@@ -1,11 +1,13 @@
 /* Custom styles for specific adjustments */
 .hero {
-    background: url ('Images/PDBG4.jpg') no-repeat center center fixed;
+    /*background: url ('Images/PDBG4.jpg') no-repeat center center fixed;*/
     background-size: cover;
     height: 100vh;
     position: relative;
 }
-
+body {
+  background-image: url('../PDBG4');
+}
 /* Style for hero content */
 .hero-content {
     position: absolute; /* Allows positioning within the hero */
