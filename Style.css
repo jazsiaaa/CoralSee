@@ -1,0 +1,278 @@
+/* Custom styles for specific adjustments */
+.hero {
+    background: url('../images/BG.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+/* Style for hero content */
+.hero-content {
+    position: absolute; /* Allows positioning within the hero */
+    right: 5%; /* Position from the right side */
+    bottom: 20%; /* Position from the bottom */
+    text-align: right; /* Align text to the right */
+    z-index: 1; /* Ensure it's above other content */
+}
+
+    /* Increase the font size for h1 */
+    .hero-content h1 {
+        font-size: 5rem; /* Larger font size */
+        color: white; /* White text color */
+        margin-bottom: 20px; /* Space below the heading */
+        line-height: 1.2; /* Line height for better readability */
+    }
+
+/* Style for button-container */
+.button-container {
+    margin-top: 20px;
+}
+
+/* Additional button styling */
+.btn-warning {
+    background-color: #f39c12; /* Custom color */
+    border: none;
+    font-size: 1.1rem;
+    padding: 10px 20px; /* Adjust padding if needed */
+    transition: background-color 0.3s ease;
+}
+
+    .btn-warning:hover {
+        background-color: #e67e22; /* Darker color on hover */
+        color: white;
+    }
+
+/* Navbar Custom Styles */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f39c12; /* Change brand color */
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: #ffffff; /* White text color */
+    transition: color 0.3s ease;
+}
+
+    .nav-link:hover {
+        color: #f39c12; /* Highlight color on hover */
+    }
+
+.navbar-nav .nav-item {
+    position: relative;
+}
+
+.dropdown-menu {
+    background-color: #333; /* Dark background for submenu */
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 0.1rem;
+}
+
+.dropdown-item {
+    color: #ffffff; /* White text color */
+    transition: background-color 0.3s ease;
+}
+
+    .dropdown-item:hover {
+        background-color: #f39c12; /* Highlight background on hover */
+        color: #333; /* Dark text color on hover */
+    }
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+    .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+.card-img-top {
+    width: 100%; /* Ensure image spans full width of the card */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    object-position: center; /* Center the image */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+}
+
+.card-text {
+    flex: 1;
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
+
+.info-section {
+    margin-top: auto; /* Pushes this section to the bottom of the card body */
+    font-size: 14px;
+    color: #555;
+}
+
+    .info-section i {
+        margin-right: 5px;
+    }
+
+.btn-primary {
+    background-color: #f39c12 !important; /* Custom color */
+    border-color: #f39c12 !important; /* Match border color */
+}
+
+    .btn-primary:hover {
+        background-color: #e67e22 !important; /* Darker shade for hover state */
+        border-color: #e67e22 !important; /* Match border color */
+    }
+
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #343a40;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.social-media a:hover svg {
+    filter: brightness(0.8);
+}
+
+.footer-section {
+    margin-bottom: 15px;
+}
+
+    .footer-section h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+            .footer-section ul li a {
+                color: #ffffff;
+                text-decoration: none;
+            }
+
+                .footer-section ul li a:hover {
+                    text-decoration: underline;
+                }
+
+.social-media a {
+    margin: 0 10px;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+    .social-media a:hover {
+        color: #ddd;
+    }
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .hero-content {
+        right: 3%;
+        bottom: 15%;
+    }
+
+        .hero-content h1 {
+            font-size: 4rem;
+        }
+}
+
+@media (max-width: 992px) {
+    .hero-content {
+        right: 2%;
+        bottom: 10%;
+        text-align: center;
+        left: 0;
+        width: 100%;
+    }
+
+        .hero-content h1 {
+            font-size: 3rem;
+        }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        bottom: 5%;
+    }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+        }
+
+    .btn-warning {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .card-img-top {
+        height: 120px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-media a {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .btn-warning, .btn-primary {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+
+    .footer-content {
+        padding: 10px 0;
+    }
+}

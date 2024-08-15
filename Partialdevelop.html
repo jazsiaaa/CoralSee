@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoralSee - Partially Developed Islands</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="Style.css" rel="stylesheet">
+
+    <style>
+        .welcome-section {
+            padding: 60px 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+
+            .welcome-section h1 {
+                font-size: 3em;
+                margin-bottom: 20px;
+            }
+
+            .welcome-section p {
+                font-size: 1.2em;
+                color: #6c757d;
+            }
+
+        .gallery {
+            padding: 40px 0;
+        }
+
+            .gallery .card {
+                border: none;
+                position: relative;
+                overflow: hidden;
+            }
+
+                .gallery .card img {
+                    width: 100%;
+                    height: 200px; /* Fixed height for uniformity */
+                    object-fit: cover; /* Ensures the image covers the container without distortion */
+                    transition: transform 0.3s ease;
+                }
+
+                    .gallery .card img:hover {
+                        transform: scale(1.05);
+                    }
+
+            .gallery .card-body {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                background: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                padding: 15px;
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+
+            .gallery .card:hover .card-body {
+                opacity: 1;
+            }
+
+            .gallery .card-title {
+                font-size: 1.2em;
+                margin-bottom: 10px;
+            }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="Index.html">C O R A L S E E</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-us">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+        <h1>Explore Our Partially Developed Islands</h1>
+        <p>Experience the perfect blend of nature and development. Our partially developed islands offer a unique combination of natural beauty and modern amenities.</p>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="container gallery">
+        <div class="row">
+            <div class="col-md-3 mb-4">
+                <a href="Product3.html" class="card">
+                    <img src="Images/PDBG1.jpg" alt=" Baa Atoll ">
+                    <div class="card-body">
+                        <h5 class="card-title"> Baa Atoll </h5>
+                        <p class="card-text">A beautifully developed island with eco-friendly amenities.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mb-4">
+                <a href="Product6.html" class="card">
+                    <img src="Images/PDBG2.jpg" alt=" Dhigurah Island ">
+                    <div class="card-body">
+                        <h5 class="card-title"> Dhigurah Island </h5>
+                        <p class="card-text">Enjoy the blend of untouched nature and modern luxury.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mb-4">
+                <a href="Product9.html" class="card">
+                    <img src="Images/PDBG3.jpg" alt=" Fuvahmulah Island ">
+                    <div class="card-body">
+                        <h5 class="card-title"> Fuvahmulah Island </h5>
+                        <p class="card-text">A partially developed paradise with unique attractions.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 mb-4">
+                <a href="Product.12.html" class="card">
+                    <img src="Images/PDBG4.jpg" alt=" Utheemu Island ">
+                    <div class="card-body">
+                        <h5 class="card-title"> Utheemu Island </h5>
+                        <p class="card-text">Discover a perfect mix of nature and development.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row footer-content">
+                <!-- About Us Section -->
+                <div class="col-md-4 footer-section">
+                    <section id="about-us">
+                        <h2>About Us</h2>
+                        <p>
+                            Welcome to CoralSee! We specialize in showcasing the world’s most breathtaking islands.
+                            Our curated catalog offers insights into stunning destinations, from tropical beaches to serene retreats.
+                            Discover your perfect island getaway with our expert recommendations and detailed guides.
+                        </p>
+                    </section>
+                </div>
+
+                <!-- Services Section -->
+                <div class="col-md-4 footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#" class="text-white">Booking Assistance</a></li>
+                        <li><a href="#" class="text-white">Personalized Recommendations</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="col-md-4 footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:Island@coralsee.com" class="text-white">Email</a></li>
+                        <li><a href="tel:+1234567890" class="text-white">Phone</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Social Media and Copyright -->
+            <div class="text-center mt-4">
+                <div class="social-media">
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>&copy; 2024 CoralSee. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
