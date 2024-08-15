@@ -1,6 +1,6 @@
 /* Custom styles for specific adjustments */
 .hero {
-    background: url('Images/BG.jpg') no-repeat center center fixed;
+    background: url (Images/BG.jpg) no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
     position: relative;
