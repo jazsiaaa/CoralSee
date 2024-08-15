@@ -4,11 +4,7 @@
     height: 100vh;
     position: relative;
 }
-body {
-  background-image: url('Images/PDBG4');
-    background-size: cover;
-      
-}
+
 /* Style for hero content */
 .hero-content {
     position: absolute; /* Allows positioning within the hero */
