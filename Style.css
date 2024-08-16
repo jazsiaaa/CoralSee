@@ -275,3 +275,15 @@ footer {
         padding: 10px 0;
     }
 }
+  @media (max-width: 768px) {
+            body {
+                background-position: center;
+            }
+        }
+
+        /* Media Query for Mobile Devices */
+        @media (max-width: 480px) {
+            body {
+                background-position: center center;
+            }
+        }
